@@ -8,7 +8,7 @@
 int sortNumbers (int numberToSort1, int numberToSort2, int numberToSort3);
 
 int main (int argc, char * argv[]) {
-	// Assigning integers for the three user inputs
+    // Assigning integers for the three user inputs
 	int numberToSort1;
 	int numberToSort2;
 	int numberToSort3;
