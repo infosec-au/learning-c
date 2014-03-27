@@ -11,7 +11,7 @@
  
 int isLeapYear (int year);
  
-int main(int argc, const char * argv[]) {
+int main(int argc, char * argv[]) {
     int yearInput;
     int leapYearValue;
 
