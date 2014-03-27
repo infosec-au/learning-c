@@ -50,8 +50,10 @@ int main (int argc, char *argv[]) {
 }
 
 int dayOfWeek (int doomsday, int leapYear, int month, int day) {
+
     // Function which computes the correct doomsday date for any given month
-    //
+    // then sends the date to doomsdayCalculations, to solve for dayOfWeek
+
     int dayOfWeek = 0;
     if (month == 1) {
         if (leapYear) {
@@ -114,14 +116,16 @@ int dayOfWeek (int doomsday, int leapYear, int month, int day) {
 
 int doomsdayCalculations (int doomsday, int doomsdayOfMonth, int day) {
     int doomsdayCalculationResult;
-
+    // Calculates the difference in days, modulo 7
     int diffInDays = (day - doomsdayOfMonth) % DAYS_PER_WEEK;
 
-
+    // In case we get a negative number for diffInDays,
+    // we can add 7 until it is positive, as adding 7
+    // will not affect the validity of the result
     while (diffInDays < 0) {
         diffInDays += DAYS_PER_WEEK;
     }
-
+    // Final calculation to find the day of week
     doomsdayCalculationResult = (diffInDays + doomsday) % DAYS_PER_WEEK;
 
     return doomsdayCalculationResult;
