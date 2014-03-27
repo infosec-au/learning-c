@@ -14,6 +14,7 @@ int printWondrous (int start);
 
 int main (int argc, char * argv[]) {
     printWondrous (3);
+    return EXIT_SUCCESS;
 }
 
 int printWondrous (int start) {
