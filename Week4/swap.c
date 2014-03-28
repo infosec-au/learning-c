@@ -13,6 +13,7 @@ void swapUnitTests ();
 
 int main (int argc, char * argv[]) {
     swapUnitTests();
+    return EXIT_SUCCESS;
 }
 
 void swap (int* first, int* second) {
