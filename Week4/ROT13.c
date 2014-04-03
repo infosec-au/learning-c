@@ -12,6 +12,7 @@ char encode (char letter);
 void testEncode ();
 int main (int argc, char * argv[]) {
     testEncode();
+    return EXIT_SUCCESS;
 }
 
 char encode (char letter) {

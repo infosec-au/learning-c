@@ -73,8 +73,21 @@ void serveHTML(int socket) {
         "\r\n"
         "<!DOCTYPE html>\n"
         "<html>\n"
-        "   <head><title>Current Short Message</title></head>\n"
-        "   <body>The current short message 2</body>\n"
+        "   <head><title>All that is gold does not glitter</title><link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\"></head>\n"
+        "   <body>\n"
+                "<div class=\"jumbotron\">\n"
+                "<h1>All That Is Gold Is Not Glitter</h1>\n"
+                "<div class=\"well\">\n"
+                "<p>All that is gold does not glitter,</p>\n"
+                "<p>Not all those who wander are lost;</p>\n"
+                "<p>The old that is strong does not wither,</p>\n"
+                "<p>Deep roots are not reached by the frost.</p>\n"
+                "<p>From the ashes a fire shall be woken,</p>\n"
+                "<p>A light from the shadows shall spring;</p>\n"
+                "<p>Renewed shall be blade that was broken,</p>\n"
+                "<p>The crownless again shall be king.</p>\n"
+                "</div></div>\n"
+        "</body>\n"
         "</html>\n";
 
     // echo the http response to the console for debugging purposes
