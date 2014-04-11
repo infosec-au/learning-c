@@ -85,7 +85,7 @@ void serveHTML(int socket) {
                 "<p>From the ashes a fire shall be woken,</p>\n"
                 "<p>A light from the shadows shall spring;</p>\n"
                 "<p>Renewed shall be blade that was broken,</p>\n"
-                "<p>The crownless again shall be king.</p>\n"
+                "<p>The crownless again shall be king.</p>\n    "
                 "</div></div>\n"
         "</body>\n"
         "</html>\n";
