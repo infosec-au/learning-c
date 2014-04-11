@@ -22,7 +22,7 @@ void serveBMP (int socket, double posX, double posY, int zoomCount);
 
 #define SIMPLE_SERVER_VERSION 1.0
 #define REQUEST_BUFFER_SIZE 1000
-#define DEFAULT_PORT 1917
+#define DEFAULT_PORT 7191
 #define NUMBER_OF_PAGES_TO_SERVE 10
 // after serving this many pages the server will halt
 
