@@ -73,15 +73,15 @@ int main (int argc, char *argv[]) {
     sscanf(request, "GET /%c%lf_%c%lf_%c%d.bmp", &requestCheckX, &requestX, &requestCheckY, &requestY, &requestCheckZ, &requestZ);
 
     // Makes sure that both capitalised and uncapitalised input is accepted
-    if ((requestCheckX != 'X') || (requestCheckX != 'x')) {
-
-        serveHTML(connectionSocket);
-
-    } else if ((requestCheckX == 'X' || requestCheckX == 'x')
-                && (requestCheckY == 'Y' || requestCheckY == 'y')
-                && (requestCheckZ == 'Z' || requestCheckZ == 'z')) {
+    if ((requestCheckX == 'X' || requestCheckX == 'x')
+        && (requestCheckY == 'Y' || requestCheckY == 'y')
+        && (requestCheckZ == 'Z' || requestCheckZ == 'z')) {
 
         serveBMP(connectionSocket, requestX, requestY, requestZ);
+
+    } else {
+
+        serveHTML(connectionSocket);
 
     }
 
