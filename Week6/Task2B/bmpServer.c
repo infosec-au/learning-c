@@ -70,7 +70,7 @@ int main (int argc, char *argv[]) {
     // Reading in user input (string scanf)
     // if the first %c is empty, serve bmp
     // else, if the first %c is a X, serve html
-    sscanf(request, "GET /%c%lf_%c%lf_%c%d.bmp", &requestCheckX, &requestX, &requestCheckY, &requestY, &requestCheckZ, &requestZ);
+    sscanf(request, "GET /tile_%c%lf_%c%lf_%c%d.bmp", &requestCheckX, &requestX, &requestCheckY, &requestY, &requestCheckZ, &requestZ);
 
     // Makes sure that both capitalised and uncapitalised input is accepted
     if ((requestCheckX == 'X' || requestCheckX == 'x')
